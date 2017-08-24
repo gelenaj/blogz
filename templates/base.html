@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <style>
+        body{font-size: 20px;}
+        .flex-container {text-align: center; margin-bottom: 6rem;};
+        .error{color:red;};
+
+    </style>
+<body>
+
+<header>
+<nav class="navbar navbar-default">
+        <ul class=nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="./blog">Main Blog Page <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="./newpost">Add a Blog Entry</a>
+            </li>
+        
+        </ul>
+    </div>
+</nav>
+
+             
+</header>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
