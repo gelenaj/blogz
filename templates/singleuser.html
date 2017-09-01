@@ -1,0 +1,20 @@
+{%extends "base.html" %}
+
+{% block content %}
+{% if new_post|length == 0 %}  
+    <p class="flex-container">No blogs yet</p>
+
+{% endif %}
+
+{% for person in user.blogs %}
+<h3><a href=./blog?id={{person.id}} style="font-style:bold";>{{person.title}}</a></h3>
+
+<p>{{person.body}}</p>
+
+
+
+<p>written by <a href="/blog?user={{user.id}}">{{user.username}}</a>
+
+{% endfor %}
+
+{% endblock %}
